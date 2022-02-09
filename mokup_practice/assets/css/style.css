@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    
+}
+/** header css*/
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    background-color:rgb(250, 248, 248);
+    align-items: center;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+  font-size: 25px;
+   font-weight: 500;
+   align-items: center;
+   margin: 0 20px;
+}
+ul li a{
+padding: 0 20px;
+text-decoration: none;
+color: rgb(136, 18, 73);
+display: block;
+}
+/* code for adding hover aftre effect*/
+ul li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #7979f0;
+    transition: .5s;
+    
+}
+li a:hover::after{
+    width: 100%;
+}
+/* code for adding main section effects*/
+.main-section{
+    display: flex;
+    border: 1px solid rgb(226, 226, 233) ;
+    align-items: center;
+    justify-content: center;
+     height: 100vh;
+     margin: auto;
+    
+}
+
+.content-left{
+    width: 40%;
+    padding: 10px;
+  
+}
+.content-left h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+section h2{
+    color: #fca70c;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    letter-spacing: 0.8rem;
+   font-weight: 400;
+
+}
+/* giving effect to heding gradiant*/
+.text{
+        text-transform: uppercase; 
+        background-image: linear-gradient(to right, #0085f2, #e04a04, #f535b5, #64f38c);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent;
+        
+        background-size: 300%;
+        background-position: -100%;  
+        
+        animation: animatedText 10s infinite alternate-reverse;
+}
+.content-left .p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 31.5px;
+    margin: 20px 0;
+}
+.btn-1{
+    padding: 15px 30px;
+    background-color: #f75229;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.content-right{
+    height: auto;
+    max-width: 40%;
+    object-fit: cover;
+  
+}
+.img-sec{
+    height: 650px;
+    max-width: 1000px;
+}
+
