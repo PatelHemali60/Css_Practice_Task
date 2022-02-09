@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>flex-demo</title>
+</head>
+
+<body>
+    <!--main div-->
+    <div class="main">
+        <h1> flex properties</h1>
+        <div class="continer">
+            <!-- section 1  for flex-->
+            <figure>
+                <figcaption><code class="code">display: flex;</code></figcaption>
+                <figure class="item-container fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 2 for display flex-end-->
+            <figure>
+                <figcaption><code class="code">display: flex; justify-content: flex-end;</code></figcaption>
+                <figure class="item-container end fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 3 for display flex-center-->
+            <figure>
+                <figcaption><code class="code">display: flex; justify-content: center;</code></figcaption>
+                <figure class="item-container center-main fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 4 for display flex-space between-->
+            <figure>
+                <figcaption><code class="code">>display: flex; justify-content: space-between;</code></figcaption>
+                <figure class="item-container between fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 5 for display flex-space around-->
+            <figure>
+                <figcaption><code class="code">display: flex; justify-content: space-around;</code></figcaption>
+                <figure class="item-container around fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 2 for display flex-space beetween-->
+            <figure>
+                <figcaption><code class="code">display: flex; justify-content: space-between; align-items-center;</code>
+                </figcaption>
+                <figure class="item-container between center-cross fig-sec">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+
+             <!-- section 2 for display flex algn item center-->
+            <figure>
+                <figcaption> <code class="code">justify-content: space-around; align-items-center; and</code> 
+                    <code class="code">order: -1;</code>
+                    
+                </figcaption>
+                <figure class="item-container around center-cross fig-sec">
+                    <div class="circle"></div>
+                    <div class="square" style="order: -1;"></div>
+                    <div class="circle"></div>
+                </figure>
+            </figure>
+        </div>
+    <!-- end of main div-->
+    </div>
+</body>
+
+</html>
